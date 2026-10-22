@@ -1,0 +1,29 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "tuusuario.predictive-input-buffer",
+	"name": "Predictive Input Buffer",
+	"version": "v0.1.0",
+	"developer": "tuusuario",
+	"description": "Buffer de inputs con etapas (2/4/8 ticks). Tecla configurable para cambiar de etapa (F6 por defecto).",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Activado",
+			"default": true
+		},
+		"cycle-key": {
+			"type": "string",
+			"name": "Tecla para cambiar de etapa",
+			"description": "Tecla que cicla OFF / 2 / 4 / 8 ticks dentro del nivel.",
+			"default": "F6",
+			"one-of": [
+				"F1", "F2", "F3", "F4", "F5", "F6",
+				"F7", "F8", "F9", "F10", "F11", "F12",
+				"Tab", "Q", "E", "R", "T", "Z", "X", "C", "V", "B", "N", "M"
+			]
+		}
+	}
+}
